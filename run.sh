@@ -1,1 +1,1 @@
-python3 start.py
+ffmpeg -re -i "https://ahmsamir.radioca.st/stream" -acodec libmp3lame -ar 44100 -b:a 128k -pix_fmt yuv420p -profile:v baseline -s 426x240 -bufsize 6000k -vb 400k -maxrate 1500k -deinterlace -vcodec libx264 -preset veryfast -g 30 -r 30 -f flv "rtmps://live-api-s.facebook.com:443/rtmp/FB-1293749137691706-0-AbyTperra4ucup0n"
